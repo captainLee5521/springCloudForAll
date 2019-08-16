@@ -1,0 +1,21 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: captain-hot-search
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        enabled: true
+        prefer-ip-address: true
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      username: captain8002
+      password: cap8002
+      database: hotsearch
+      authentication-database: admin

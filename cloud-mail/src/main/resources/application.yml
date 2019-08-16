@@ -1,0 +1,30 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: captain-cloud-mail
+  # 注册中心配置
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        enabled: true
+        prefer-ip-address: true
+  # 163邮箱配置
+  mail:
+    host: smtp.163.com # 指定使用邮件类型
+    username: 18878476650@163.com #用户名（邮箱账号）
+    password: 22771688admin #授权码或邮箱密码
+    # QQ邮箱配置
+    # username: 2692213435@qq.com
+    # password: pfhjimuigqqeddcd
+    properties:
+      stmp:
+        auth: true
+        starttls:
+          enable: true
+    default-encoding: utf-8
+
+
+
